@@ -31,7 +31,7 @@
             id="email"
             placeholder="name@example.com"
           />
-          <div class="invalid-feedback">Please enter a valid email.</div>
+          <div class="invalid-feedback" id="invalid-email">Please enter a valid email.</div>
         </div>
 
         <!-- Password -->
@@ -46,7 +46,7 @@
           <div class="form-text">
             Must be at least 8 characters, include one uppercase letter, one number, and one special character.
           </div>
-          <div class="invalid-feedback">Password does not meet requirements.</div>
+          <div class="invalid-feedback" id="invalid-password">Password does not meet requirements.</div>
         </div>
 
         <!-- Confirm Password -->
@@ -58,7 +58,7 @@
             id="confirmPassword"
             placeholder="Re-enter password"
           />
-          <div class="invalid-feedback">Passwords do not match.</div>
+          <div class="invalid-feedback" id="password-mismatch">Passwords do not match.</div>
         </div>
 
         <!-- Terms -->
@@ -67,11 +67,11 @@
           <label class="form-check-label" for="terms">
             I agree to the <a href="#">terms and conditions</a>
           </label>
-          <div class="invalid-feedback">You must agree before submitting.</div>
+          <div class="invalid-feedback" id="terms-feedback">You must agree before submitting.</div>
         </div>
 
         <!-- Submit -->
-        <button type="submit" class="btn btn-primary w-100">Register</button>
+        <button type="submit" class="btn btn-primary w-100" id="register-btn">Register</button>
       </form>
     </div>
     <script src="script.js"></script>
